@@ -1,0 +1,52 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-color: red;
+
+}
+.main-body{
+    display: flex;
+    /* border: 2px solid gold; */
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+#board{
+    min-height: 80vmin;
+    min-width: 80vmin;
+    border: 2px solid black;
+    background: linear-gradient(green,yellow);
+    display: grid;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+}
+
+
+.head{
+    background-color: red;
+}
+
+.food{
+    background-color: slateblue;
+}
+.snake{
+    background-color: #4d7044;
+}
+#scoree{
+    position: absolute;
+    top: 9px;
+    right: 200px;
+    font-size: 20px;
+}
+#musicToggleButton{
+    position: absolute;
+    top: 15px;
+    right: 8px;
+
+}
+#highScoreBox{
+    position: absolute;
+    top: 40px;
+}
