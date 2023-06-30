@@ -153,13 +153,42 @@ else{
 
 
 window.requestAnimationFrame(main);
+function arrowup(){
+    console.log("ArrowUp",snakeDir.y)
+            if(snakeDir.y == 0){
+                snakeDir.x = 0;
+                snakeDir.y = -1;
+            }
+}
+function arrowdown(){
+    console.log("ArrowDown")
+    if(snakeDir.y!==-1){
+        snakeDir.x = 0;
+        snakeDir.y = 1;
+    }
+}
+function arrowright(){
+    console.log("ArrowRight")
+    if(snakeDir.x!==-1){
+        snakeDir.x = 1;
+        snakeDir.y = 0;
+    }
+}
+function arrowleft(){
+    console.log("ArrowLeft")            
+    if(snakeDir.x!==1){
+        snakeDir.x = -1;
+        snakeDir.y = 0;
+    }
+}
+
 window.addEventListener('keydown', e=>{
       //Start the game
     // moespund.play()
     switch (e.key){
         case "ArrowUp":
             console.log("ArrowUp",snakeDir.y)
-            if(snakeDir.y == 0){
+            if(snakeDir.y !== 1){
                 snakeDir.x = 0;
                 snakeDir.y = -1;
             }

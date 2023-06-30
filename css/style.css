@@ -19,8 +19,8 @@ body{
     border: 2px solid black;
     background: linear-gradient(green,yellow);
     display: grid;
-    grid-template-rows: repeat(18, 1fr);
-    grid-template-columns: repeat(18, 1fr);
+    grid-template-rows: repeat(19, 1fr);
+    grid-template-columns: repeat(19, 1fr);
 }
 
 
@@ -49,4 +49,129 @@ body{
 #highScoreBox{
     position: absolute;
     top: 40px;
+}
+.arrow-btn{
+    display: none;
+    position: absolute;
+}
+.up{
+    margin-top: 315px;
+    height: 50px;
+    width: 50px;
+    border: 2px solid blue;
+}
+.down{
+    height: 50px;
+    width: 50px;
+    border: 2px solid blue;
+    margin-top: 425px;
+}
+.left{
+    height: 50px;
+    width: 50px;
+    margin-right:105px;
+    border: 2px solid blue;
+    margin-top: 370px;
+}
+.right{
+    height: 50px;
+    width: 50px;
+    border: 2px solid blue;
+    margin-left:105px;
+    margin-top: 370px;
+}
+.arrow-btn{
+    background-color: rgb(90, 2, 213);
+    cursor: pointer;
+}
+
+.arrow-btn:hover{
+    background-color: rgb(70, 2, 164);
+}
+@media only screen and (max-width:320px){
+    .arrow-btn{
+        display: inline-block;
+}
+}
+@media (min-width:319px) and (max-width:400px){
+    .up{
+        margin-top: 375px;
+    }
+    .down{
+        margin-top: 485px;
+    }
+    .left{
+        margin-top: 430px;
+    }
+    .right{
+        margin-top: 430px;
+    }
+    .arrow-btn{
+        display: inline-block;
+}
+
+}
+@media (min-width:400px) and (max-width:500px){
+    .up{
+        margin-top: 455px;
+    }
+    .down{
+        margin-top: 565px;
+    }
+    .left{
+        margin-top: 510px;
+    }
+    .right{
+        margin-top: 510px;
+    }
+    .arrow-btn{
+        display: inline-block;
+}
+
+.main-body{
+    margin-bottom: 100px;
+}
+}
+@media (min-width:500px) and (max-width:600px){
+    .up{
+        margin-top: 525px;
+    }
+    .down{
+        margin-top: 635px;
+    }
+    .left{
+        margin-top: 580px;
+    }
+    .right{
+        margin-top: 580px;
+    }
+    .arrow-btn{
+        display: inline-block;
+}
+
+.main-body{
+    margin-bottom: 100px;
+}
+}
+
+@media (min-width:600px){
+    .up{
+        margin-top: 630px;
+    }
+    .down{
+        margin-top: 760px;
+    }
+    .left{
+        margin-top: 705px;
+    }
+    .right{
+        margin-top: 705px;
+    }
+    .arrow-btn{
+        display: inline-block;
+}
+
+.main-body{
+    margin-bottom: 150px;
+}
 }
